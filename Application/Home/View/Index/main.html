@@ -1,0 +1,69 @@
+<include file="Public/header" title="主页" />
+
+<div id="data_display">
+
+<!--注释table
+<table cellpadding=6 cellspacing=10>
+<foreach name="list" item="vo">
+</foreach>
+<volist name="list" id="vo">
+<tr>
+<td >{$vo.id}</td>
+<td >{$vo.product_type}</td>
+<td >{$vo.description}</td>
+<td >{$vo.image_url}</td>
+</tr>
+</volist>
+<tr>        
+</tr>
+</table>
+-->
+<!--Page是分页码条-->
+
+<!--div class="container"-->
+
+	<div class="component">
+		<table>
+			<thead>
+				<tr>
+					<th>设备序号</th>
+					<th>设备类型</th>
+					<th>生产商</th>
+					<th>设备描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<!--注释：list手动显示-->
+				<!--tr>
+					<td class="user-name">gary coleman</td>
+					<td class="user-email">gary.coleman21@example.com</td>
+					<td class="user-phone">(398)-332-5385</td>
+					<td class="user-mobile">(888)-677-3719</td>
+				</tr>
+
+				<tr>
+					<td class="user-name">gary coleman</td>
+					<td class="user-email">gary.coleman21@example.com</td>
+					<td class="user-phone">(398)-332-5385</td>
+					<td class="user-mobile">(888)-677-3719</td>
+				</tr-->
+
+				<volist name="list" id="vo">
+				<tr>
+					<td >{$vo.product_id}</td>
+					<td >{$vo.product_type}</td>
+					<td >{$vo.producer}</td>
+					<td >{$vo.description}</td>
+				</tr>
+				</volist>
+
+			</tbody>
+
+		</table>
+	</div>
+<!--/div--><!-- /container -->
+
+<div class="result page">{$page}</div> 
+</div>
+</body>

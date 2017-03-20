@@ -1,0 +1,146 @@
+<!--==================底部说明栏=================-->
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+	
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2017 
+						汽车研究院IT运维自动化系统
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+		<!--=====================右侧弹出的chat部分=========================================================-->
+		<!-- start: Chat Section -->
+		<div id="chat" class="fixed">
+			
+			<div class="chat-inner">
+			
+				
+				<h2 class="chat-header">
+					<a href="#" class="chat-close" data-toggle="chat">
+						<i class="fa-plus-circle rotate-45deg"></i>
+					</a>
+					
+					Chat
+					<span class="badge badge-success is-hidden">0</span>
+				</h2>
+				
+				
+				<script type="text/javascript">
+				// Here is just a sample how to open chat conversation box
+				jQuery(document).ready(function($)
+				{
+					var $chat_conversation = $(".chat-conversation");
+					
+					$(".chat-group a").on('click', function(ev)
+					{
+						ev.preventDefault();
+						
+						$chat_conversation.toggleClass('is-open');
+						
+						$(".chat-conversation textarea").trigger('autosize.resize').focus();
+					});
+					
+					$(".conversation-close").on('click', function(ev)
+					{
+						ev.preventDefault();
+						$chat_conversation.removeClass('is-open');
+					});
+				});
+				</script>
+
+				
+				
+
+				
+				<!--右侧弹出的chat内容-->
+				
+				<div class="chat-group">
+					<strong>Favorites</strong>
+					
+					<a href="#"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a>
+					<a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a>
+				</div>
+				
+				
+				<div class="chat-group">
+					<strong>Work</strong>
+					
+					<a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a>
+				</div>
+				
+				
+				<div class="chat-group">
+					<strong>Other</strong>
+					
+					<a href="#"><span class="user-status is-online"></span> <em>Mindy A. Smith</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>Herman S. Foltz</em></a>
+					<a href="#"><span class="user-status is-idle"></span> <em>Vivian J. Hall</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Melinda A. Anderson</em></a>
+				
+				</div>
+			
+			</div>
+			
+			<!-- conversation template -->
+			<div class="chat-conversation">
+				
+				<div class="conversation-header">
+					<a href="#" class="conversation-close">
+						&times;
+					</a>
+					
+					<span class="user-status is-online"></span>
+					<span class="display-name">Arlind Nushi</span> 
+					<small>Online</small>
+				</div>
+				
+		
+				
+				<div class="chat-textarea">
+					<textarea class="form-control autogrow" placeholder="Type your message"></textarea>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- end: Chat Section -->
+		
+		
+	</div>
+	
+	
+	<div class="page-loading-overlay">
+		<div class="loader-2"></div>
+	</div>
+	
+
+
+
+
+</body>
+</html>

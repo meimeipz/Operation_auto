@@ -1,0 +1,23 @@
+<include file="Public/header" title="主页" />
+
+<div id="data_display">
+
+<table cellpadding=6 cellspacing=10>
+<volist name="list" id="vo">
+<tr>
+<td >{$vo.id}</td>
+<td >{$vo.product_type}</td>
+<td >{$vo.description}</td>
+<td >{$vo.image_purl}</td>
+
+</tr>
+</volist>
+<tr>        
+</tr>
+</table>
+<!--Page是分页码条-->
+<div class="result page">{$page}</div> 
+
+</div>
+</body>
+</html>
